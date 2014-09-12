@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root 'welcomes#index'
   resources :users
   resources :agents, controller: 'users', type: 'Agent'
   resources :buyers, controller: 'users', type: 'Buyer'

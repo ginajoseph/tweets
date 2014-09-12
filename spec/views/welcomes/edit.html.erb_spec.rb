@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe "welcome/edit", :type => :view do
+RSpec.describe "welcomes/edit", :type => :view do
   before(:each) do
-    @welcome = assign(:welcome, Welcome.create!())
+    @welcome = assign(:welcomes, Welcome.create!())
   end
 
-  it "renders the edit welcome form" do
+  it "renders the edit welcomes form" do
     render
 
     assert_select "form[action=?][method=?]", welcome_path(@welcome), "post" do

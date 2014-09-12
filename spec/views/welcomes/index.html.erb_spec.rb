@@ -1,14 +1,14 @@
 require 'rails_helper'
 
-RSpec.describe "welcome/index", :type => :view do
+RSpec.describe "welcomes/index", :type => :view do
   before(:each) do
-    assign(:welcome, [
+    assign(:welcomes, [
       Welcome.create!(),
       Welcome.create!()
     ])
   end
 
-  it "renders a list of welcome" do
+  it "renders a list of welcomes" do
     render
   end
 end

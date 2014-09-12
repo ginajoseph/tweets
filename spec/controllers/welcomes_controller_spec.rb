@@ -37,33 +37,33 @@ RSpec.describe WelcomesController, :type => :controller do
   let(:valid_session) { {} }
 
   describe "GET index" do
-    it "assigns all welcome as @welcome" do
+    it "assigns all welcomes as @welcomes" do
       welcome = Welcome.create! valid_attributes
       get :index, {}, valid_session
-      expect(assigns(:welcome)).to eq([welcome])
+      expect(assigns(:welcomes)).to eq([welcome])
     end
   end
 
   describe "GET show" do
-    it "assigns the requested welcome as @welcome" do
+    it "assigns the requested welcomes as @welcomes" do
       welcome = Welcome.create! valid_attributes
       get :show, {:id => welcome.to_param}, valid_session
-      expect(assigns(:welcome)).to eq(welcome)
+      expect(assigns(:welcomes)).to eq(welcome)
     end
   end
 
   describe "GET new" do
-    it "assigns a new welcome as @welcome" do
+    it "assigns a new welcomes as @welcomes" do
       get :new, {}, valid_session
-      expect(assigns(:welcome)).to be_a_new(Welcome)
+      expect(assigns(:welcomes)).to be_a_new(Welcome)
     end
   end
 
   describe "GET edit" do
-    it "assigns the requested welcome as @welcome" do
+    it "assigns the requested welcomes as @welcomes" do
       welcome = Welcome.create! valid_attributes
       get :edit, {:id => welcome.to_param}, valid_session
-      expect(assigns(:welcome)).to eq(welcome)
+      expect(assigns(:welcomes)).to eq(welcome)
     end
   end
 
@@ -71,30 +71,30 @@ RSpec.describe WelcomesController, :type => :controller do
     describe "with valid params" do
       it "creates a new Welcome" do
         expect {
-          post :create, {:welcome => valid_attributes}, valid_session
+          post :create, {:welcomes => valid_attributes}, valid_session
         }.to change(Welcome, :count).by(1)
       end
 
-      it "assigns a newly created welcome as @welcome" do
-        post :create, {:welcome => valid_attributes}, valid_session
-        expect(assigns(:welcome)).to be_a(Welcome)
-        expect(assigns(:welcome)).to be_persisted
+      it "assigns a newly created welcomes as @welcomes" do
+        post :create, {:welcomes => valid_attributes}, valid_session
+        expect(assigns(:welcomes)).to be_a(Welcome)
+        expect(assigns(:welcomes)).to be_persisted
       end
 
-      it "redirects to the created welcome" do
-        post :create, {:welcome => valid_attributes}, valid_session
+      it "redirects to the created welcomes" do
+        post :create, {:welcomes => valid_attributes}, valid_session
         expect(response).to redirect_to(Welcome.last)
       end
     end
 
     describe "with invalid params" do
-      it "assigns a newly created but unsaved welcome as @welcome" do
-        post :create, {:welcome => invalid_attributes}, valid_session
-        expect(assigns(:welcome)).to be_a_new(Welcome)
+      it "assigns a newly created but unsaved welcomes as @welcomes" do
+        post :create, {:welcomes => invalid_attributes}, valid_session
+        expect(assigns(:welcomes)).to be_a_new(Welcome)
       end
 
       it "re-renders the 'new' template" do
-        post :create, {:welcome => invalid_attributes}, valid_session
+        post :create, {:welcomes => invalid_attributes}, valid_session
         expect(response).to render_template("new")
       end
     end
@@ -106,50 +106,50 @@ RSpec.describe WelcomesController, :type => :controller do
         skip("Add a hash of attributes valid for your model")
       }
 
-      it "updates the requested welcome" do
+      it "updates the requested welcomes" do
         welcome = Welcome.create! valid_attributes
-        put :update, {:id => welcome.to_param, :welcome => new_attributes}, valid_session
+        put :update, {:id => welcome.to_param, :welcomes => new_attributes}, valid_session
         welcome.reload
         skip("Add assertions for updated state")
       end
 
-      it "assigns the requested welcome as @welcome" do
+      it "assigns the requested welcomes as @welcomes" do
         welcome = Welcome.create! valid_attributes
-        put :update, {:id => welcome.to_param, :welcome => valid_attributes}, valid_session
-        expect(assigns(:welcome)).to eq(welcome)
+        put :update, {:id => welcome.to_param, :welcomes => valid_attributes}, valid_session
+        expect(assigns(:welcomes)).to eq(welcome)
       end
 
-      it "redirects to the welcome" do
+      it "redirects to the welcomes" do
         welcome = Welcome.create! valid_attributes
-        put :update, {:id => welcome.to_param, :welcome => valid_attributes}, valid_session
+        put :update, {:id => welcome.to_param, :welcomes => valid_attributes}, valid_session
         expect(response).to redirect_to(welcome)
       end
     end
 
     describe "with invalid params" do
-      it "assigns the welcome as @welcome" do
+      it "assigns the welcomes as @welcomes" do
         welcome = Welcome.create! valid_attributes
-        put :update, {:id => welcome.to_param, :welcome => invalid_attributes}, valid_session
-        expect(assigns(:welcome)).to eq(welcome)
+        put :update, {:id => welcome.to_param, :welcomes => invalid_attributes}, valid_session
+        expect(assigns(:welcomes)).to eq(welcome)
       end
 
       it "re-renders the 'edit' template" do
         welcome = Welcome.create! valid_attributes
-        put :update, {:id => welcome.to_param, :welcome => invalid_attributes}, valid_session
+        put :update, {:id => welcome.to_param, :welcomes => invalid_attributes}, valid_session
         expect(response).to render_template("edit")
       end
     end
   end
 
   describe "DELETE destroy" do
-    it "destroys the requested welcome" do
+    it "destroys the requested welcomes" do
       welcome = Welcome.create! valid_attributes
       expect {
         delete :destroy, {:id => welcome.to_param}, valid_session
       }.to change(Welcome, :count).by(-1)
     end
 
-    it "redirects to the welcome list" do
+    it "redirects to the welcomes list" do
       welcome = Welcome.create! valid_attributes
       delete :destroy, {:id => welcome.to_param}, valid_session
       expect(response).to redirect_to(welcomes_url)

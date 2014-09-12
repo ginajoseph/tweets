@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "welcome/show", :type => :view do
+RSpec.describe "welcomes/show", :type => :view do
   before(:each) do
-    @welcome = assign(:welcome, Welcome.create!())
+    @welcome = assign(:welcomes, Welcome.create!())
   end
 
   it "renders attributes in <p>" do
