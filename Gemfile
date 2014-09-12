@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.2'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 
@@ -61,6 +63,11 @@ gem "codeclimate-test-reporter", group: :test, require: nil
 
 # Use debugger
  #gem 'debugger', group: [:development, :test]
+
+group :production do
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   gem 'rspec-rails'
