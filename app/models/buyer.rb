@@ -1,0 +1,3 @@
+class Buyers < Client
+
+end
