@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf06f723-e1c9-4088-ad1c-45b5a9079200" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tweets.iws" />
@@ -101,8 +100,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27842227" vertical-offset="0" max-vertical-offset="431">
-              <caret line="8" column="191" selection-start-line="8" selection-start-column="191" selection-end-line="8" selection-end-column="191" />
+            <state vertical-scroll-proportion="0.17401393" vertical-offset="0" max-vertical-offset="431">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -895,12 +894,12 @@
       <updated>1410387028768</updated>
       <workItem from="1410387030085" duration="52188000" />
       <workItem from="1410561578196" duration="16000" />
-      <workItem from="1410561613248" duration="4616000" />
+      <workItem from="1410561613248" duration="4796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56820000" />
+    <option name="totallyTimeSpent" value="57000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="22" width="847" height="796" extended-state="0" />
@@ -1322,8 +1321,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27842227" vertical-offset="0" max-vertical-offset="431">
-          <caret line="8" column="191" selection-start-line="8" selection-start-column="191" selection-end-line="8" selection-end-column="191" />
+        <state vertical-scroll-proportion="0.17401393" vertical-offset="0" max-vertical-offset="431">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
